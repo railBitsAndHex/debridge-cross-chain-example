@@ -1,1 +1,1 @@
-# debridge-ross-chain-example
+# debridge-cross-chain-example
