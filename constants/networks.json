@@ -1,0 +1,28 @@
+{
+    "4": {
+        "name": "Eth Rinkeby",
+        "chainId": "4",
+        "symbol": "ETH",
+        "rpc_url": "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+        "arpc_url": "https://eth-rinkeby.alchemyapi.io/v2/",
+        "blockExplorerTx": "https://rinkey.etherscan.io/tx/",
+        "blockExplorerAddress": "https://rinkey.etherscan.io/address/"
+    },
+    "4002" : {
+        "name": "Fantom Testnet",
+        "chainId": "4002",
+        "symbol": "FTM",
+        "rpc_url": "https://rpc.testnet.fantom.network/",
+        "blockExplorerTx": "https://testnet.ftmscan.com/tx/",
+        "blockExplorerAddress": "https://testnet.ftmscan.com/address/"
+    },
+    "421611": {
+        "name": "Arbitrum Rinkeby Testnet",
+        "symbol": "ETH",
+        "chainId": "421611",
+        "rpc_url": "https://rinkeby.arbitrum.io/rpc",
+        "arpc_url": "https://arb-rinkeby.g.alchemy.com/v2/",
+        "blockExplorerTx": "https://testnet.arbiscan.io//tx/",
+        "blockExplorerAddress": "https://testnet.arbiscan.io//address/"        
+    }
+}
