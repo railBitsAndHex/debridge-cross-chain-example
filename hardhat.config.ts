@@ -9,6 +9,7 @@ import "@typechain/hardhat";
 import "hardhat-deploy";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
+import "@debridge-finance/hardhat-debridge";
 
 // TASKS
 // import "./tasks/00_sendCrossChainMessage"
@@ -33,26 +34,28 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.9",
-      },
-      {
-        version: "0.8.4",
-      },
-      {
-        version: "0.8.1",
-      },
-      {
-        version: "0.7.6",
+        version: "0.8.7",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 999999,
+          },
+        },
       },
     ],
   },
   networks: {
     hardhat: {
-      chainId: 31337,
+      allowUnlimitedContractSize: true,
+      forking: {
+        url: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_API_KEY}`
+      },
+      gas: 10000000
     },
     localhost: {
       chainId: 31337,
-      accounts: !accounts.length ? [] : accounts
+      allowUnlimitedContractSize: true,
+
     },
     ethRinkeby: {
       chainId: 4,
